@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ShowEmailController">
+   <children>
+      <GridPane prefHeight="328.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="224.79999389648435" minHeight="10.0" prefHeight="157.59998779296873" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.60001220703123" minHeight="30.0" prefHeight="49.60001220703123" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="355.0" text="Message type: " />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="355.0" text="E-mail" wrapText="true" GridPane.columnIndex="1" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="355.0" text="Header: " GridPane.rowIndex="1" />
+            <Label fx:id="EmailHeader" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="355.0" text="EmailHeader" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="355.0" text="E-mail address: " GridPane.rowIndex="2" />
+            <Label fx:id="EmailAddress" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="355.0" text="EmailAddress" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="355.0" text="Subject: " GridPane.rowIndex="3" />
+            <Label fx:id="EmailSubject" alignment="CENTER" contentDisplay="CENTER" prefHeight="67.0" prefWidth="355.0" text="EmailSubject" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="223.0" prefWidth="300.0" text="Text: " GridPane.rowIndex="4" />
+            <Label fx:id="EmailText" alignment="CENTER" contentDisplay="CENTER" prefHeight="212.0" prefWidth="300.0" text="EmailText" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="336.0" text="Quarantine: " GridPane.rowIndex="5" />
+            <Label fx:id="EmailQuarantine" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="300.0" text="EmailQuarantine" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Button fx:id="Next" layoutX="266.0" layoutY="328.0" mnemonicParsing="false" onAction="#Next" prefHeight="46.0" prefWidth="68.0" text="Next" />
+   </children>
+</AnchorPane>

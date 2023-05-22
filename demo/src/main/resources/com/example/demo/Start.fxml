@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.StartController">
+   <children>
+      <Label layoutX="132.0" layoutY="25.0" prefHeight="27.0" prefWidth="337.0" text="Welcome to Napier Banking System.">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="Start" layoutX="258.0" layoutY="272.0" mnemonicParsing="false" onAction="#StartButton" prefHeight="62.0" prefWidth="85.0" text="Start" />
+   </children>
+</AnchorPane>
